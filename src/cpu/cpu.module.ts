@@ -6,4 +6,6 @@ import { CpuService } from './cpu.service';
   imports: [PowerModule],
   providers: [CpuService],
 })
-export class CpuModule { }
+export class CpuModule {
+  //
+}
