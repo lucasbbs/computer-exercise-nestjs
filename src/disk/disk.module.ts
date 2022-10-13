@@ -1,10 +1,11 @@
 import { Module } from '@nestjs/common';
-import { PowerService } from 'src/power/power.service';
 import { DiskService } from './disk.service';
+import { PowerModule } from '../power/power.module';
 
 @Module({
-  imports: [PowerService],
+  imports: [PowerModule],
   providers: [DiskService],
+  exports: [DiskService],
 })
 export class DiskModule {
   //
